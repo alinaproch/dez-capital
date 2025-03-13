@@ -4,7 +4,7 @@ body {
   scroll-behavior: smooth;
 }
 header {
-  background-color: #10C163;
+  background-color: #10c163;
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -36,33 +36,44 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
-  background-color: #f8fcff;
+  padding: 20px;
 }
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+}
+
+.hero-content .logo {
+  width: 110px; /* Подгони размер логотипа */
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 .call-to-action {
   background-color: green;
   color: white;
-  font-size: 16px;
   padding: 10px 20px;
   border-radius: 20px;
-  cursor: pointer;
   text-decoration: none;
-  width: fit-content;
-  display: block;  
-  margin: 10px 0 0 0;  
 }
 
-.call-to-action:hover {
-  background-color: darkgreen;
+.hero-image img {
+  width: 500px;
+  max-width: 400px; /* Регулируй размер картинки */
+  position: relative;
+  left: -50px; 
 }
 
 
 
 
-.image img {
-  width: 400px;
-  height: auto;
-}
 section {
   padding: 100px 50px;
   text-align: center;
@@ -76,8 +87,6 @@ section {
   border-bottom: 2px solid black;
   display: inline-block;
 }
-
-
 
 .service-container {
   display: flex;
@@ -141,8 +150,8 @@ h3 {
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-.process-button{
-  background:#66BB6A;
+.process-button {
+  background: #66bb6a;
   color: white;
   border: none;
   padding: 8px 15px;
@@ -171,7 +180,8 @@ h3 {
   padding: 20px; /* Уменьшаем внутренние отступы */
   margin: 20px auto; /* Добавляем немного внешнего отступа */
   max-width: 900px; /* Ограничиваем максимальную ширину */
-  text-align: center;background-color: #60B564;
+  text-align: center;
+  background-color: #60b564;
 }
 
 .contact-section h2 {
@@ -184,5 +194,20 @@ h3 {
   margin-bottom: 15px;
 }
 
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: -20px;
+}
 
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
 
+.social-icons img {
+  height: auto;
+}

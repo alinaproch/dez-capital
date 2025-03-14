@@ -37,6 +37,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  
 }
 
 .hero-content {
@@ -44,16 +45,23 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   max-width: 50%;
+  margin-bottom: 50px;
 }
 
-.hero-content .logo {
-  width: 110px; /* Подгони размер логотипа */
-  margin-bottom: 15px;
+.logo {
+  width: 250px; 
+  height: auto; 
+  position: absolute;
+  top: 65px; 
+  margin-bottom: -10px;
+  left: 50px;
+  transform: translateX(0); 
+  z-index: 10; 
 }
 
 .hero-content h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  position: relative;
+  margin-top: 250px; 
 }
 
 .call-to-action {
@@ -62,17 +70,18 @@ nav {
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
+  margin-top: 5px; 
 }
+
 
 .hero-image img {
-  width: 500px;
-  max-width: 400px; /* Регулируй размер картинки */
-  position: relative;
-  left: -50px; 
+  width: 400px;
+  /* max-width: 400px;  */
+  left: -50px;
+  margin-bottom:150px;
+  margin-top: -10px
+
 }
-
-
-
 
 section {
   padding: 100px 50px;
@@ -177,15 +186,15 @@ h3 {
 }
 
 .contact-section {
-  padding: 20px; /* Уменьшаем внутренние отступы */
-  margin: 20px auto; /* Добавляем немного внешнего отступа */
-  max-width: 900px; /* Ограничиваем максимальную ширину */
+  padding: 20px; 
+  margin: 20px auto; 
+  max-width: 900px; 
   text-align: center;
   background-color: #60b564;
 }
 
 .contact-section h2 {
-  font-size: 24px; /* Делаем заголовок меньше */
+  font-size: 24px; 
   margin-bottom: 10px;
 }
 
